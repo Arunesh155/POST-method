@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Method</title>
+    <style>
+        body {
+            background-image:url("https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://localhost:8800/login" method="post">
+        <h2>Post Method</h2>
+        <label for="username">Enter your name:</label><br>
+        <input type="text" id="name" name="name" value=""><br><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="text" id="email" name="email" value=""><br><br>
+        <label for="mobile">Enter your mobile:</label><br>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+        <label for="age">Enter your Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        <input type="submit" name="login" value="Login">
+    </form>
+</body>
+</html>
